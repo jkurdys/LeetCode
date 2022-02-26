@@ -18,6 +18,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 
 * Three Consecutive Odds
 * Valid Perfect Square
+* Palindrome Number
 
 <!-- ### Installing
 

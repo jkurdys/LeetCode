@@ -10,6 +10,14 @@ isPerfectSquare:
 Given a positive integer num, write a function which
 returns True if num is a perfect square else False.
 Follow up: Do not use any built-in library function such as sqrt.
+
+isPalindrome:
+9. Palindrome Number
+Given an integer x, return true if x is palindrome integer.
+An integer is a palindrome when it reads the same backward
+as forward.
+For example, 121 is a palindrome while 123 is not.
+
 '''
 
 class Solution:
@@ -24,3 +32,8 @@ class Solution:
             return True
         else:
             return False
+
+    def isPalindrome(self, x: int) -> bool:
+        i = str(x)
+        j = i[::-1]
+        return i == j
