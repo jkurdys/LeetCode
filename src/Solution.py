@@ -76,14 +76,15 @@ class Solution:
                    'M': 1000}
         
         out = romnums[s[-1]]
+
         for i in range(len(s) - 2, -1, -1):
-            if s[i + 1] < s[i]:
+            
+            if romnums[s[i]] >= romnums[s[i+1]]:
                 out += romnums[s[i]]
             else:
                 out -= romnums[s[i]]
 
-        print(out)
+        return out
 
 if __name__ == '__main__':
-    S = Solution
-    S.romanToInt(s='LVIII')
+    pass
