@@ -20,6 +20,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 * Valid Perfect Square
 * Palindrome Number
 * Roman to Integer
+* Arithmetic Slices
 
 <!-- ### Installing
 
