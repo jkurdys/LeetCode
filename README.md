@@ -21,6 +21,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 * Palindrome Number
 * Roman to Integer
 * Arithmetic Slices
+* Nth Highest Salary (in progress)
 
 <!-- ### Installing
 
