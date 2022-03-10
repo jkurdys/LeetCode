@@ -22,6 +22,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 * Roman to Integer
 * Arithmetic Slices
 * Nth Highest Salary
+* Rank Scores
 
 <!-- ### Installing
 
