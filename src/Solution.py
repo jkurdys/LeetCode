@@ -144,5 +144,46 @@ class Solution:
         
         return int(slices)
 
+    '''
+    2. Add Two Numbers
+
+    You are given two non-empty linked lists representing
+    two non-negative integers. The digits are stored in
+    reverse order, and each of their nodes contains a
+    single digit. Add the two numbers and return the sum
+    as a linked list.
+
+    You may assume the two numbers do not contain any
+    leading zero, except the number 0 itself.
+    '''
+    # Definition for singly-linked list.
+    # class ListNode:
+    #     def __init__(self, val=0, next=None):
+    #         self.val = val
+    #         self.next = next
+    
+    def addTwoNumbers(self, l1, l2):
+        print(l1.val)
+        print(l1.next)
+        n1 = ''
+        while l1:
+            n1 += str(l1.val)
+            l1 = l1.next
+        n2 = ''    
+        while l2:
+            n2 += str(l2.val)
+            l2 = l2.next
+        psum = str(int(n1[::-1]) + int(n2[::-1]))
+        
+        nln = ListNode()
+        for i in range(len(psum)-1, -1, -1):
+            if i == len(psum)-1:
+                nln.val = psum[i]
+            else:
+                nln.next = nln
+                nln.val = psum[i]
+                
+                
+        return nln
 if __name__ == '__main__':
     pass
