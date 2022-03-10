@@ -157,14 +157,12 @@ class Solution:
     leading zero, except the number 0 itself.
     '''
     # Definition for singly-linked list.
-    # class ListNode:
-    #     def __init__(self, val=0, next=None):
-    #         self.val = val
-    #         self.next = next
+    class ListNode:
+        def __init__(self, val=0, next=None):
+            self.val = val
+            self.next = next
     
     def addTwoNumbers(self, l1, l2):
-        print(l1.val)
-        print(l1.next)
         n1 = ''
         while l1:
             n1 += str(l1.val)
@@ -174,14 +172,27 @@ class Solution:
             n2 += str(l2.val)
             l2 = l2.next
         psum = str(int(n1[::-1]) + int(n2[::-1]))
+        psum = psum[::-1]
+        if int(psum) == 0:
+            return ListNode()
         
         nln = ListNode()
+        mln = ListNode()
+        
         for i in range(len(psum)-1, -1, -1):
+            
             if i == len(psum)-1:
-                nln.val = psum[i]
+                mln.val = int(psum[i])
+                nln.next = mln
             else:
-                nln.next = nln
-                nln.val = psum[i]
+                oln = ListNode()
+                oln.val = psum[i]
+                oln.next = mln
+                mln = oln
+                nln = oln
+        if int(nln.val) == 0:
+            return nln.next
+        return nln
                 
                 
         return nln
