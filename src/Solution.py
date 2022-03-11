@@ -173,6 +173,7 @@ class Solution:
             l2 = l2.next
         psum = str(int(n1[::-1]) + int(n2[::-1]))
         psum = psum[::-1]
+        print(psum)
         if int(psum) == 0:
             return ListNode()
         
@@ -181,7 +182,11 @@ class Solution:
         
         for i in range(len(psum)-1, -1, -1):
             
-            if i == len(psum)-1:
+            if len(psum) == 1:
+                nln.val = int(psum[i])
+                return nln
+            
+            elif i == len(psum)-1:
                 mln.val = int(psum[i])
                 nln.next = mln
             else:
@@ -190,8 +195,7 @@ class Solution:
                 oln.next = mln
                 mln = oln
                 nln = oln
-        if int(nln.val) == 0:
-            return nln.next
+        
         return nln
                 
                 

@@ -1,6 +1,6 @@
 # LeetCode Challenges
 
-This repository holds solutions to my completed [LeetCode](https://leetcode.com/jkurdys/) coding problems.
+Solutions to my completed [LeetCode](https://leetcode.com/jkurdys/) coding problems.
 
 ## Description
 
@@ -23,6 +23,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 * Arithmetic Slices
 * Nth Highest Salary
 * Rank Scores
+* Add Two Numbers
 
 <!-- ### Installing
 
