@@ -1,8 +1,8 @@
 /*
 177. Nth Highest Salary
-Write an SQL query to report
-the nth highest salary from the Employee table. If
-there is no nth highest salary, the query should
+Write an SQL query to reportthe nth highest
+salary from the Employee table. Ifthere is
+no nth highest salary, the query should
 report null.
 */
 
@@ -26,7 +26,6 @@ END
 
 /*
 178. Rank Scores
-
 Write an SQL query to rank the scores. The ranking
 should be calculated according to the following rules:
 
@@ -45,3 +44,16 @@ order.
 SELECT score,
        DENSE_RANK() OVER (ORDER BY score DESC) AS 'rank'
 FROM scores;
+
+/*
+620. Not Boring Movies
+Write an SQL query to report the movies with an
+odd-numbered ID and a description that is not "boring".
+Return the result table ordered by rating in descending
+order.
+*/
+SELECT *
+FROM cinema
+WHERE id % 2 != 0
+  AND description NOT LIKE 'boring'
+ORDER BY rating DESC

@@ -24,6 +24,7 @@ All completed challanges can be found in the src folder in the file Solution.py
 * Nth Highest Salary
 * Rank Scores
 * Add Two Numbers
+* Not Boring Movies
 
 <!-- ### Installing
 
