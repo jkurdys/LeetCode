@@ -197,7 +197,21 @@ class Solution:
                 nln = oln
         
         return nln
-                
+
+    def longestCommonPrefix(strs):
+        '''
+        14. Longest Common Prefix
+        Write a function to find the longest common
+        prefix string amongst an array of strings.
+        If there is no common prefix, return an empty
+        string "".
+        '''
+        first = min(strs)
+        last = max(strs)
+        for i, c in enumerate(first):
+            if c != last[i]:
+                return first[:i]
+        return first     
                 
         return nln
 if __name__ == '__main__':

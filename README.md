@@ -11,20 +11,22 @@ Solutions to my completed [LeetCode](https://leetcode.com/jkurdys/) coding probl
 ### Dependencies
 
 * Python files written in Python3
+* SQL files written in MySQL
 
 ### Completed Challenges
 
-All completed challanges can be found in the src folder in the file Solution.py
+All completed challanges can be found in the src folder in the file Solution.py, Solution.sql, respectively.
 
-* Three Consecutive Odds
-* Valid Perfect Square
-* Palindrome Number
-* Roman to Integer
-* Arithmetic Slices
-* Nth Highest Salary
-* Rank Scores
-* Add Two Numbers
-* Not Boring Movies
+* Three Consecutive Odds    (Python)
+* Valid Perfect Square      (Python)
+* Palindrome Number         (Python)
+* Roman to Integer          (Python)
+* Arithmetic Slices         (Python)
+* Nth Highest Salary        (SQL)
+* Rank Scores               (SQL)
+* Add Two Numbers           (Python)
+* Not Boring Movies         (SQL)
+* Longest Common Prefix     (Python)
 
 <!-- ### Installing
 
